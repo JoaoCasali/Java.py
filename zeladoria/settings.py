@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-$v_zxl&g!k1epp0jlk!-&npyi19maimlt-==%)q4)incu1^&@e'
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -98,10 +98,6 @@ STATICFILES_DIRS = [
 
 # Caminho dos arquivos estáticos da produção
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-# Onde é salvo os arquivos de media salvos pelo usuário
-MEDIA_URL = 'media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
